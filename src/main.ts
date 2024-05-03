@@ -1,5 +1,5 @@
 import { Review } from './interfaces'
-import { LoyaltyUser } from './enums'
+import { LoyaltyUser, Permissions } from './enums'
 import './style.css'
 
 // Reviews
@@ -23,3 +23,13 @@ const reviews: Review[] = [
       date: '27-03-2021',
   },
 ]
+
+// Current User
+const you = {
+  firstName: 'Bobby',
+  lastName: 'Brown',
+  permissions: Permissions.ADMIN,
+  isReturning: true,
+  age: 35,
+  stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
+}

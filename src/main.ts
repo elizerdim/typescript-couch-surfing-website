@@ -1,7 +1,9 @@
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
-import { displayReviewTotal, displayUser, displayProperties } from './utils'
+import { displayReviewTotal, displayUser, displayProperties, displayTopTwoReviews } from './utils'
 import './style.css'
+
+const getReviewsBtn = document.querySelector<HTMLButtonElement>('#get-reviews-btn');
 
 // Reviews
 const reviews: Review[] = [
@@ -91,7 +93,7 @@ const properties: Property[] = [
   }
 ]
 
-// Display reviews
+// Display review total
 displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
 
 // Display current user
@@ -99,3 +101,9 @@ displayUser(you.isReturning, you.firstName);
 
 // Display properties
 displayProperties(properties, you.permissions);
+
+// Display reviews on 'Get reviews' button click
+getReviewsBtn!.addEventListener('click', () => {
+  displayTopTwoReviews(reviews);
+  getReviewsBtn!.remove();
+})

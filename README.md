@@ -27,11 +27,9 @@ This is a project from the [Learn Typescript](https://scrimba.com/learn/typescri
 
 ## What I learned
 
-I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I made slight modifications with generics and non-null assertion operators to get rid of some errors, I used innerText instead of innerHTML, and opted for ```article``` element instead of ```div``` element for some elements.
+I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I made slight modifications with generics and non-null assertion operators to get rid of some errors, I used innerText instead of innerHTML, opted for an ```article``` element instead of a ```div``` element for the card component, and refactored some of the code.
 
 Here are the things I learned from completing this project:
-
-JavaScript is a dynamically typed high-level language and TypeScript is a syntactic superset of JavaScript that adds static typing to it. 
 
 - Primitive types (number, string, boolean)
 - Union types

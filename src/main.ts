@@ -1,6 +1,6 @@
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
-import { displayReviewTotal } from './utils'
+import { displayReviewTotal, displayUser } from './utils'
 import './style.css'
 
 // Reviews
@@ -93,3 +93,6 @@ const properties: Property[] = [
 
 // Display reviews
 displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
+
+// Display current user
+displayUser(you.isReturning, you.firstName);

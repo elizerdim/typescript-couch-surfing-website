@@ -27,7 +27,7 @@ This is a project from the [Learn Typescript](https://scrimba.com/learn/typescri
 
 ## What I learned
 
-I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I added slight modifications with generics and non-null assertion operators to get rid of some errors.
+I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I made slight modifications with generics and non-null assertion operators to get rid of some errors, I used innerText instead of innerHTML, and opted for ```article``` element instead of ```div``` element for some elements.
 
 Here are the things I learned from completing this project:
 
@@ -184,6 +184,8 @@ class Rectangle implements Shape {
   }
 }
 ```
+
+- Apart from TypeScript, I learned that standard attributes of HTML elements are available as properties on the HTML element object, so dot notation can be used for standard attributes instead of ```setAttribute()``` / ```getAttribute()``` methods in DOM manipulation. (from JavaScript: The Definitive Guide (7th edition) by David Flanagan)
 
 ## Useful resources
 

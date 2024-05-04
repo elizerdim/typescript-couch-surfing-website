@@ -2,24 +2,36 @@
 
 This is a project from the [Learn Typescript](https://scrimba.com/learn/typescript) course from [Scrimba](https://scrimba.com/).
 
-### Screenshot
+## Table of contents
+
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [What I learned](#what-i-learned)
+- [Useful resources](#useful-resources)
+
+## Screenshot
 
 ![]()
 
-### Links
+## Links
 
 - [View Code](https://www.example.com)
 - [Live Preview](https://www.example.com)
 
-### Built with
+## Built with
 
 - HTML
 - CSS
 - TypeScript
 
-### What I learned
+## What I learned
 
-JavaScript is a dynamically typed high-level language. TypeScript is a syntactic superset of JavaScript that adds static typing. Here are the things I learned from completing this project:
+I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I added slight modifications with generics and non-null assertion operators to get rid of some errors.
+
+Here are the things I learned from completing this project:
+
+JavaScript is a dynamically typed high-level language and TypeScript is a syntactic superset of JavaScript that adds static typing to it. 
 
 - Primitive types (number, string, boolean)
 - Union types
@@ -32,7 +44,7 @@ JavaScript is a dynamically typed high-level language. TypeScript is a syntactic
 - Classes in TypeScript
 - Functions (types of parameters and return values can be specified)
 
-Additional things I learned from W3S's TypeScript tutorial:
+Since it's been a long time since I completed this project before adding it to GitHub, I wanted to complete W3S's TypeScript tutorial for a refresher and actually ended up learning a lot more about TypeScript. Here are the additional things I learned from W3S's TypeScript tutorial (this kind of turned into my personal note-taking space about TypeScript and I believe I will be revisiting these notes and links when working with TypeScript in the future):
 
 - Type inference and explicit vs. implicit type assignment
 - Capitalized versions of primitive types (e.g. Number, String, Boolean, etc.) shouldn't be used except for very specific cases.
@@ -44,6 +56,7 @@ Additional things I learned from W3S's TypeScript tutorial:
 - named tuples
 - Optional properties in object types (defined with ?:)
 - Optional parameters in functions (also defined with ?:)
+- Non-null assertion operator (defined with !.)
 - Default parameters in functions - the default value goes after the type annotation:
 
 ```js
@@ -136,9 +149,9 @@ const { name, age }: { name: string; age: number } = person;
 - Casting - the process of overriding a type - syntax is (x as string) or (&lt;string&gt;x)
 
 - Visibility modifiers in TypeScript classes
-  * ```public``` - (default) allows access to the class member from anywhere
-  * ```private``` - only allows access to the class member from within the class
-  * ```protected``` - allows access to the class member from itself and any classes that inherit it
+  - ```public``` - (default) allows access to the class member from anywhere
+  - ```private``` - only allows access to the class member from within the class
+  - ```protected``` - allows access to the class member from itself and any classes that inherit it
 
 - Similar to arrays, the readonly keyword can prevent class members from being changed.
 
@@ -172,7 +185,7 @@ class Rectangle implements Shape {
 }
 ```
 
-### Useful resources
+## Useful resources
 
 - [W3S's TypeScript tutorial](https://www.w3schools.com/typescript/) - I completed this tutorial as a refresher but ended up learning about more things in TypeScript. It is a simple tutorial that includes a lot of concepts.
 - [enums](https://www.typescriptlang.org/docs/handbook/enums.html) - TypeScript documentation for enums. Enums are used to define a set of named constants for purposes such as categorization of data.
@@ -181,4 +194,5 @@ class Rectangle implements Shape {
 - [Index Signatures](https://www.typescriptlang.org/glossary/#index-signatures) - Index signatures can be used for an object type with an unknown key value. 
 - [Shape](https://www.typescriptlang.org/glossary/#shape) - "The term “shape” is used to describe the fields and values on a JavaScript object."
 - [Generics](https://www.youtube.com/watch?v=EcCTIExsqmI) - Explanation of generics from WDS (YouTube).
-- [Utility Types](https://www.w3schools.com/typescript/typescript_utility_types.php)
+- [Utility Types](https://www.w3schools.com/typescript/typescript_utility_types.php) - Explains most popular utility types: Partial, Required, Record, Omit, Pick, Exclude, ReturnType, Parameters, Readonly
+- [Non-null assertion operator](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)

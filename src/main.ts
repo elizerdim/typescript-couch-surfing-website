@@ -1,5 +1,6 @@
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
+import { displayReviewTotal } from './utils'
 import './style.css'
 
 // Reviews
@@ -89,3 +90,6 @@ const properties: Property[] = [
     isAvailable: false
   }
 ]
+
+// Display reviews
+displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);

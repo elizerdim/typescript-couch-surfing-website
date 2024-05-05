@@ -33,6 +33,7 @@ Here are the things I learned from completing this project:
 
 - Primitive types (number, string, boolean)
 - Union types
+- Literal types
 - Dynamic types (any)
 - Enums
 - Type Aliases

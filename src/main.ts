@@ -1,6 +1,6 @@
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
-import { displayReviewTotal, displayUser, displayProperties, displayTopTwoReviews } from './utils'
+import { displayReviewTotal, displayUser, displayProperties, displayTopTwoReviews, showCity, displayTime } from './utils'
 import './style.css'
 
 const getReviewsBtn = document.querySelector<HTMLButtonElement>('#get-reviews-btn');
@@ -107,3 +107,10 @@ getReviewsBtn!.addEventListener('click', () => {
   displayTopTwoReviews(reviews);
   getReviewsBtn!.remove();
 })
+
+// Display location, time, and weather temperature in the footer
+// location and weather temperature
+navigator?.geolocation.getCurrentPosition(showCity); // showCity calls displayCity, which calls displayWeather
+
+// time
+setInterval(displayTime, 1000);

@@ -27,9 +27,7 @@ This is a project from the [Learn Typescript](https://scrimba.com/learn/typescri
 
 ## What I learned
 
-I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. I made slight modifications with generics and non-null assertion operators to get rid of some errors, I used innerText instead of innerHTML, opted for an ```article``` element instead of a ```div``` element for the card component, and refactored some of the code.
-
-Here are the things I learned from completing this project:
+I completed this project on Scrimba back in September 2023 when I was first learning TypeScript and wanted to include it here for reference. Here are the things I learned from completing this project:
 
 - Primitive types (number, string, boolean)
 - Union types
@@ -43,7 +41,9 @@ Here are the things I learned from completing this project:
 - Classes in TypeScript
 - Functions (types of parameters and return values can be specified)
 
-Since it's been a long time since I completed this project before adding it to GitHub, I wanted to complete W3S's TypeScript tutorial for a refresher and actually ended up learning a lot more about TypeScript. Here are the additional things I learned from W3S's TypeScript tutorial (this kind of turned into my personal note-taking space about TypeScript and I believe I will be revisiting these notes and links when working with TypeScript in the future):
+However, I ended up making a lot of changes to the original code after learning more about TypeScript and asyncronous code while creating a repo with proper commits for the project. I used some TypeScript features that were not included in the scrimba's tutorial and I also used APIs and async code to fetch the info in the footer instead of hard-coded mock data.
+
+Because it's been a long time since I completed this project before adding it to GitHub, I wanted to complete W3S's TypeScript tutorial for a refresher and ended up learning a lot more; here are the additional things I learned from W3S's tutorial:
 
 - Type inference and explicit vs. implicit type assignment
 - Capitalized versions of primitive types (e.g. Number, String, Boolean, etc.) shouldn't be used except for very specific cases.

@@ -90,7 +90,7 @@ async function displayCity(latitude: number, longitude: number) {
 // weather temperature
 async function displayWeather(city: string) {
   try {
-    const res = await fetch(`http://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${city}`);
+    const res = await fetch(`https://api.weatherapi.com/v1/current.json?key=${import.meta.env.VITE_WEATHER_API_KEY}&q=${city}`);
     const data = await res.json();
     displayFooterInfo(data.current.temp_c, weatherSpan!);
     weatherSpan!.innerText += '°';

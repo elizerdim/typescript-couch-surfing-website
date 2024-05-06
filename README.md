@@ -12,12 +12,12 @@ This is a project from the [Learn Typescript](https://scrimba.com/learn/typescri
 
 ## Screenshot
 
-![]()
+![](./screenshot.jpeg)
 
 ## Links
 
-- [View Code](https://www.example.com)
-- [Live Preview](https://www.example.com)
+- [View Code](https://github.com/elizerdim/typescript-couch-surfing-website)
+- [Live Preview](https://typescript-couch-surfing-website.vercel.app/)
 
 ## Built with
 

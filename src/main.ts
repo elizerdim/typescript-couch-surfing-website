@@ -1,9 +1,19 @@
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
-import { displayReviewTotal, displayUser, displayProperties, displayTopTwoReviews, showCity, displayTime } from './utils'
+import { displayUser, displayReviewTotal, displayTopTwoReviews, displayProperties, showCity, displayTime } from './utils'
 import './style.css'
 
 const getReviewsBtn = document.querySelector<HTMLButtonElement>('#get-reviews-btn');
+
+// Current User
+const you = {
+  firstName: 'Bobby',
+  lastName: 'Brown',
+  permissions: Permissions.ADMIN,
+  isReturning: true,
+  age: 35,
+  stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
+}
 
 // Reviews
 const reviews: Review[] = [
@@ -26,16 +36,6 @@ const reviews: Review[] = [
       date: '27-03-2021',
   },
 ]
-
-// Current User
-const you = {
-  firstName: 'Bobby',
-  lastName: 'Brown',
-  permissions: Permissions.ADMIN,
-  isReturning: true,
-  age: 35,
-  stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
-}
 
 // Properties
 const properties: Property[] = [
@@ -93,20 +93,19 @@ const properties: Property[] = [
   }
 ]
 
-// Display review total
-displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
-
 // Display current user
 displayUser(you.isReturning, you.firstName);
 
-// Display properties
-displayProperties(properties, you.permissions);
+// Display review total
+displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);
 
 // Display reviews on 'Get reviews' button click
 getReviewsBtn!.addEventListener('click', () => {
   displayTopTwoReviews(reviews);
-  getReviewsBtn!.remove();
 })
+
+// Display properties
+displayProperties(properties, you.permissions);
 
 // Display location, time, and weather temperature in the footer
 // location and weather temperature

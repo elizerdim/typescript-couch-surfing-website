@@ -38,6 +38,11 @@ body {
   margin: 20px;
 }
 
+.main-image {
+  max-height: 80vh;
+  object-fit: cover;
+}
+
 .properties {
   display: flex;
   flex-wrap: wrap;

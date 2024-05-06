@@ -1,6 +1,7 @@
+import MainProperty from './classes';
 import { Review, Property } from './interfaces'
 import { LoyaltyUser, Permissions } from './enums'
-import { displayUser, displayReviewTotal, displayTopTwoReviews, displayProperties, showCity, displayTime } from './utils'
+import { displayUser, displayMainProperty, displayReviewTotal, displayTopTwoReviews, displayProperties, showCity, displayTime } from './utils'
 import './style.css'
 
 const getReviewsBtn = document.querySelector<HTMLButtonElement>('#get-reviews-btn');
@@ -14,6 +15,18 @@ const you = {
   age: 35,
   stayedAt: ['florida-home', 'oman-flat', 'tokyo-bungalow']
 }
+
+// Main Property
+const mainProperty = new MainProperty(
+  'images/italian-property.jpg',
+  'Italian House',
+  [{
+    name: 'Olive',
+    stars: 5,
+    loyaltyUser: LoyaltyUser.GOLD_USER,
+    date: '12-04-2021'
+  }]
+);
 
 // Reviews
 const reviews: Review[] = [
@@ -95,6 +108,9 @@ const properties: Property[] = [
 
 // Display current user
 displayUser(you.isReturning, you.firstName);
+
+// Display main property
+displayMainProperty(mainProperty);
 
 // Display review total
 displayReviewTotal(reviews.length, reviews[0].name, reviews[0].loyaltyUser);

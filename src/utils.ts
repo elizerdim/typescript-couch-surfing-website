@@ -1,8 +1,10 @@
+import MainProperty from "./classes";
 import { LoyaltyUser, Permissions } from "./enums";
 import { Property, Review } from "./interfaces";
 
 const returningUser = document.querySelector<HTMLSpanElement>('#returning-user') 
 const userName = document.querySelector<HTMLSpanElement>('#user') 
+const mainImage = document.querySelector<HTMLImageElement>('.main-image')
 const reviewTotalDisplay = document.querySelector<HTMLHeadingElement>('#reviews') 
 const getReviewsBtn = document.querySelector<HTMLButtonElement>('#get-reviews-btn');
 const reviewContainer = document.querySelector<HTMLDivElement>('.reviews');
@@ -17,6 +19,10 @@ export function displayUser(isReturning: boolean, name: string): void {
   }
 
   userName!.innerText = name;
+}
+
+export function displayMainProperty(property: MainProperty) {
+  mainImage!.src = property.src;
 }
 
 export function displayReviewTotal(value: number, reviewer: string, isLoyalty: LoyaltyUser): void {

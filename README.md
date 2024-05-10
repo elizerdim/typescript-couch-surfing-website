@@ -197,3 +197,4 @@ class Rectangle implements Shape {
 - [Generics](https://www.youtube.com/watch?v=EcCTIExsqmI) - Explanation of generics from WDS (YouTube).
 - [Utility Types](https://www.w3schools.com/typescript/typescript_utility_types.php) - Explains most popular utility types: Partial, Required, Record, Omit, Pick, Exclude, ReturnType, Parameters, Readonly
 - [Non-null assertion operator](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#non-null-assertion-operator)
+- [Dotenv | Sync to Vercel](https://www.youtube.com/watch?v=EdAjvzCFvIk)

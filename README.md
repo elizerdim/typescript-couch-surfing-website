@@ -50,7 +50,7 @@ Because it's been a long time since I completed this project before adding it to
 - unknown type
 - never type
 - undefined & null types
-- ```readonly``` keyword
+- `readonly` keyword
 - Tuples only have strongly defined types for the assigned values - there is no type safety for additional elements unless the tuple is created with readonly
 - named tuples
 - Optional properties in object types (defined with ?:)
@@ -148,9 +148,9 @@ const { name, age }: { name: string; age: number } = person;
 - Casting - the process of overriding a type - syntax is (x as string) or (&lt;string&gt;x)
 
 - Visibility modifiers in TypeScript classes
-  - ```public``` - (default) allows access to the class member from anywhere
-  - ```private``` - only allows access to the class member from within the class
-  - ```protected``` - allows access to the class member from itself and any classes that inherit it
+  - `public` - (default) allows access to the class member from anywhere
+  - `private` - only allows access to the class member from within the class
+  - `protected` - allows access to the class member from itself and any classes that inherit it
 
 - Similar to arrays, the readonly keyword can prevent class members from being changed.
 
@@ -168,7 +168,7 @@ class Person {
 }
 ```
 
-- Interfaces can be used to define the type a class must follow through the ```implements``` keyword.
+- Interfaces can be used to define the type a class must follow through the `implements` keyword.
 
 ```js
 interface Shape {
@@ -184,7 +184,7 @@ class Rectangle implements Shape {
 }
 ```
 
-- Apart from TypeScript, I learned that standard attributes of HTML elements are available as properties on the HTML element object, so dot notation can be used for standard attributes instead of ```setAttribute()``` / ```getAttribute()``` methods in DOM manipulation. (from JavaScript: The Definitive Guide (7th edition) by David Flanagan)
+- Apart from TypeScript, I learned that standard attributes of HTML elements are available as properties on the HTML element object, so dot notation can be used for standard attributes instead of `setAttribute()` / `getAttribute()` methods in DOM manipulation. (from JavaScript: The Definitive Guide (7th edition) by David Flanagan)
 
 ## Useful resources
 
